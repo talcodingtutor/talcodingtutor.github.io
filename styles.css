@@ -1,4 +1,20 @@
+
+body::before {
+  content: "";
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  z-index: -1;
+}
+
 body {
+  background-color: rgba(0, 0, 0, 0.5);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -31,11 +47,11 @@ nav a {
 }
 
 nav a:hover {
-  color: #007BFF;
+  color: #007bff;
 }
 
 h2 {
-  color: #007BFF;
+  color: #007bff;
   margin-bottom: 20px;
 }
 
@@ -47,4 +63,22 @@ footer {
   background-color: #f8f9fa;
   padding: 20px 0;
   text-align: center;
+}
+
+.navbar {
+  background-color: #272727;
+  border-bottom: 2px solid #ff4d4d;
+}
+
+.navbar a {
+  color: #ffffff;
+}
+
+.navbar a:hover {
+  color: #ff4d4d;
+}
+
+img {
+  border-radius: 50%;
+  border: 2px solid #ccc;
 }
